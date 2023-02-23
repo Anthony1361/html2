@@ -1,0 +1,12 @@
+.parentdiv{
+   
+   height: 30vh;
+   /* display: grid; */
+   
+   /* color: blue; */
+}
+
+.firstdiv{
+    display: grid;
+    margin: 20px;
+}

@@ -1,0 +1,49 @@
+body{
+    background-color: gray;
+    color: white;
+}
+
+.im{
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+nav{
+    margin-left: 700px;
+    margin-bottom: 100px;
+}
+
+a{
+    word-spacing: 80px;
+    text-decoration:none;
+}
+
+.Bi{
+    color: black;
+}
+
+span{
+    color: orangered;
+}
+
+.Ce{
+    background-color: black;
+}
+
+.pp{
+    margin-top: 50px;
+    background-color: black;
+}
+
+div:hover{
+    background-color: orangered;
+}
+
+.A{
+    word-spacing: normal;
+}
+
+.container{
+    background-color: black;
+}

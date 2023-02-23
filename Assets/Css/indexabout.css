@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url("../Imges/bg.jpg");
+    color: #ffffff;
+}
+
+.container{
+    border: 1px solid #ff0000;
+    margin: 20px;
+    width: 90%;
+    height: 300px;
+    display: flex;
+}
+
+.content{
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #0000ff;
+}
+
+
+.container ul {
+    padding: 10px;
+    list-style: none;
+}
+
+ol li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+.container .in{
+    text-align: center;
+    color: red;
+}

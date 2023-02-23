@@ -1,0 +1,132 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(palevioletred,purple);
+    font-family: sans-serif;
+}
+
+
+/* body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+        to bottom,
+        palevioletred 0%,
+        palevioletred, purple 50%,
+        grey 50%,
+        black 100%
+
+    );
+} */
+
+
+.parentdiv{
+    /* border: 1px solid; */
+    background-color: white;
+    /* margin-left: 5rem;
+    margin-right: 500px;
+    margin-top: 5rem;
+    margin-bottom: -5rem; */
+    border-radius: 2%;
+    /* justify-content: center;
+    align-content: center; */
+    width: 50vw;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.regform{
+    text-indent: 3rem;
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.section1{
+    display: flex;
+}
+
+/* .firstname{
+    margin-left:3rem ;
+} */
+
+.input{
+    width: 250px;
+    height: 30px;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.lastname{
+    margin-left: 5rem;
+    width: 250px;
+    height: 30px;
+}
+
+.section2{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.birth{
+    margin-left: 3rem;
+    width: 250px;
+    height: 30px;
+}
+
+.gender{
+    margin-top: -1rem;
+    margin-left: 5rem;
+}
+
+.rad{
+    margin-left: -4rem;
+    margin-top: 1rem;
+}
+
+.rad input[type="radio"]
+{
+   border-radius: 50%;
+   height: 20px;
+   width: 20px;
+}
+.female{
+    word-spacing: 1rem;
+    margin-bottom: 10px;
+}
+
+.section3{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.mail{
+    margin-left: 3rem;
+    width: 250px;
+    height: 30px;
+}
+
+.phone{
+    margin-left: 5rem;
+    width: 250px;
+    height: 30px;
+}
+
+button{
+    margin-left: 3rem;
+    color: white;
+    background-color: blue;
+    padding: 12px;
+    margin-top: 2rem;
+    border-radius: 20%;
+    margin-bottom: 3rem;
+}
+
+fieldset{
+    margin-left: 3rem;
+    width: 570px;
+}
+
+fieldset select{
+    border: none;
+    width: inherit;
+}
