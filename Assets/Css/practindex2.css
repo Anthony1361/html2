@@ -11,7 +11,8 @@ body{
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
-    background: #23242a;
+     background: #23242a; 
+    
 }
 
 .box{
@@ -20,10 +21,10 @@ body{
     height: 420px;
     background: #1c1c1c;
     border-radius: 8px;
-    overflow: hidden;
+     overflow: hidden; 
 }
 
-.box:before{
+ .box:before{
     content: "";
     z-index: 1;
     position: absolute;
@@ -35,17 +36,16 @@ body{
     background: linear-gradient(  aqua ,transparent); 
     animation: animate 5s infinite;
      animation-delay: -3s; 
-}
+} 
 
-@keyframes animate{
-    /* 0%{
-        transform: rotate(0deg);
-    } */
+
+
+  @keyframes animate{
 
     100%{
         transform: rotate(360deg);
     }
-}
+} 
 
 form{
      position: absolute; 

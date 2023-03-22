@@ -1,0 +1,80 @@
+
+
+
+body{
+    background: gray;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h2{
+    color: transparent;
+    font-size: xx-large;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url(../Imges/Bike.jpg);
+}
+
+h1{
+    font-size: xx-large;
+    text-transform: capitalize;
+    color: transparent;
+    background-size: 200%;
+    background-clip: text;
+      background-image: repeating-linear-gradient(45deg,white,black 7%,grey 10%); 
+    animation: yes 3s linear infinite;
+}
+
+@keyframes yes{
+    /* from{
+        background: purple, pink;
+    } */
+
+    to{
+        background-position: 100% center;
+    }
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    background: #060c21;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(20px);
+}
+
+.box::before,
+.box::after{
+    background: linear-gradient(235deg,#89ff00,#000000,#00bcd4);
+}
+
+.contain{
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+}
+  
+  

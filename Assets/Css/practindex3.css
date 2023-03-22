@@ -67,3 +67,22 @@ input:focus ~ span
     color: aqua;
     font-size: 12px;
 }
+
+.run{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    background: red;
+    position: relative;
+    animation: myrun 5s infinite;
+}
+
+@keyframes myrun{
+    0%{
+        top: 0px; background: red; width: 100px;
+    }
+
+    100%{
+        top: 200px; background: yellow; width: 300px;
+    }
+}

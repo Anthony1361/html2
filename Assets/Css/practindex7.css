@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: black;
+}
+
+.creative{
+    max-width: 50rem;
+    margin: auto;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.creative h2{
+    margin: 20px;
+    margin-left: 300px;
+}
+
+/* ............................................. */
+
+.skew{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: white;
+    position: relative;
+    padding: 100px;
+     background-image: url(../Imges/purple.jpg);
+    background-position: center;
+    background-size: cover; 
+    
+}
+
+.skew h2{
+    margin: 20px;
+    margin-left: 450px;
+}
+
+.skew p{
+    padding: 30px;
+}
+
+.curve{
+    fill:white;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+     left: 0;
+    
+}
+
+/* .skew::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../Imges/purple.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: skewY(-5deg);
+    z-index: -1;
+} */
+
+/* .............................................. */
+
+.some{
+    max-width: 50rem;
+    margin: auto;
+    color: black;
+    margin-bottom: 100px;
+}
+
+#background{
+  background: white;
+}
+
+.some h2{
+    padding-bottom: 30px;
+    margin-left: 300px;
+}
+
+.some p{
+  padding: 30px;
+}
+
+/* ............................................. */
+
+.spike h1{
+    position: relative;
+    display: flex;
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.spike h1 span{
+    color: black;
+    font-size: xx-large;
+    text-transform: uppercase;
+    animation: spiky .5s infinite;
+}
+
+@keyframes spiky{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.spike h1 span:nth-child(1)
+{
+  animation-delay: .0s;
+}
+
+.spike h1 span:nth-child(2)
+{
+  animation-delay: .1s;
+}
+
+.spike h1 span:nth-child(3)
+{
+  animation-delay: .2s;
+}
+
+.spike h1 span:nth-child(4)
+{
+  animation-delay: .3s;
+}
+
+.spike h1 span:nth-child(5)
+{
+  animation-delay: .4s;
+}
+
+.spike h1 span:nth-child(6)
+{
+  animation-delay: .5s;
+}
+
+.spike h1 span:nth-child(7)
+{
+  animation-delay: .6s;
+}
+
+.spike h1 span:nth-child(8)
+{
+  animation-delay: .7s;
+}
+
+.spike h1 span:nth-child(9)
+{
+  animation-delay: .8s;
+}
+
+.spike h1 span:nth-child(10)
+{
+  animation-delay: .9s;
+}
+
+.spike h1 span:nth-child(11)
+{
+  animation-delay: 1s;
+}
+
+/* ........................................................... */
+
+.lightning h2{
+     /* color: #333;     */
+    position: relative;
+    /* display: flex; */
+    margin: 100px;
+    margin-bottom: 50px;
+    height: 100px;
+    background: black;
+}
+
+.lightning h2 span{
+  animation: ligh 2s linear infinite;
+}
+
+@keyframes ligh{
+   0%{
+      color: white;
+   }
+
+   100%{
+      color: gray;
+   }
+}
+
+/* ....................................................... */
+
+.shining h2{
+  /* color: #333;     */
+ position: relative;
+ /* display: flex; */
+ margin: 100px;
+ margin-bottom: 50px;
+ height: 100px;
+ background: black;
+}
+
+.shining h2 span{
+animation: shine 1s linear infinite;
+}
+
+@keyframes shine{
+0%,80%{
+   color: #333;
+   text-shadow: none;
+}
+
+100%{
+   color: white;
+   text-shadow: 0 0 10px  white,
+                0 0 20px     white,
+               0 0 40px     white,
+               0 0 80px     white,
+               0 0 20px  white,
+               0 0 60px   white; 
+}
+}
+
+.shining h2 span:nth-child(1)
+{
+  animation-delay: .0s;
+}
+
+.shining h2 span:nth-child(2)
+{
+  animation-delay: .1s;
+}
+
+.shining h2 span:nth-child(3)
+{
+  animation-delay: .2s;
+}
+
+.shining h2 span:nth-child(4)
+{
+  animation-delay: .3s;
+}
+
+.shining h2 span:nth-child(5)
+{
+  animation-delay: .4s;
+}
+
+.shining h2 span:nth-child(6)
+{
+  animation-delay: .5s;
+}
+
+.shining h2 span:nth-child(7)
+{
+  animation-delay: .6s;
+}
+
+.shining h2 span:nth-child(8)
+{
+  animation-delay: .7s;
+}
+
+.shining h2 span:nth-child(9)
+{
+  animation-delay: .8s;
+}
+
+.shining h2 span:nth-child(10)
+{
+  animation-delay: .9s;
+}
+
+.shining h2 span:nth-child(11)
+{
+  animation-delay: 1s;
+}
+
+/* ........................................................... */
+
+.disappearing h1{
+  position: relative;
+  margin: 100px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: 100px;
+  color: white;
+}
+
+.disappearing h1 span{
+  animation: appear 1s linear infinite;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+/* ........................................ */
+
+.smoking h1{
+  position: relative;
+  /* margin-top: 50px; */
+  margin-left: 150px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.smoking video{
+  margin-top: -300px;
+  margin-bottom: -350px;
+  object-fit: cover;
+}
+
+.smoking h1 span{
+  display: inline-block;
+  opacity: 0;
+  animation: smoke 1s linear forwards;
+}
+
+@keyframes smoke{
+  0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+
+.smoking h1 span:nth-child(1)
+{
+    animation-delay: 1s;
+}
+
+.smoking h1 span:nth-child(2)
+{
+    animation-delay: 1.5s;
+}
+
+.smoking h1 span:nth-child(3)
+{
+    animation-delay: 2s;
+}
+
+.smoking h1 span:nth-child(4)
+{
+    animation-delay: 2.5s;
+}
+
+.smoking h1 span:nth-child(5)
+{
+    animation-delay: 2.75s;
+}
+
+.smoking h1 span:nth-child(6)
+{
+    animation-delay: 3s;
+}
+
+.smoking h1 span:nth-child(7)
+{
+    animation-delay: 3.5s;
+}
+
+
+.smoking h1 span:nth-child(8)
+{
+    animation-delay: 3.75s;
+}
+
+.smoking h1 span:nth-child(9)
+{
+    animation-delay: 4s;
+}
+
+.smoking h1 span:nth-child(10)
+{
+    animation-delay: 4.5s;
+}
+
+.smoking h1 span:nth-child(11)
+{
+    animation-delay: 4.75s;
+}
+
+/* .......................................... */
+.inside{
+  position: relative;
+}
+.inside h1{
+  color: white;
+  margin: 50px;
+  font-size: 100px;
+  /* position: relative; */
+  background: gray;
+  mix-blend-mode: multiply;
+}
+
+.inside video{
+  /* object-fit: cover; */
+  margin-bottom: -500px;
+  /* position: relative; */
+}
+
+/* ...................................................... */
