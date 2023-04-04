@@ -461,6 +461,7 @@ border: 3px dotted #00f376;
     animation: rotate 5s infinite;
 }
 
+
 @keyframes rotate{
     0%{
         transform: rotateX(45deg) rotateY(-45deg);
@@ -507,7 +508,7 @@ border: 3px dotted #00f376;
     top: 180px;
 }
 
-.card{
+ .card{
     height: 250px;
     width: 250px;
     text-align: center;
@@ -518,7 +519,7 @@ border: 3px dotted #00f376;
     background: #00f376;
     border: 2px solid white;
     transition: all 1s;
-}
+} 
 
 #left{
     right: 125px;
@@ -549,6 +550,177 @@ border: 3px dotted #00f376;
 }
 
 /* ................................................. */
+
+.corn1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    perspective: 1000px;
+    height: 60vh;
+    width: 30vh;
+}
+
+.born1{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    /* transform: rotate(-90deg); */
+    transform-style: preserve-3d;
+    /* transform: rotateY(30deg); */
+    animation: rotate2 5s infinite;
+}
+
+.born1 img{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@keyframes rotate2{
+    0%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+
+    25%{
+        transform: rotateX(-45deg) rotateY(-45deg);
+    }
+
+    50%{
+        transform: rotateX(45deg) rotateY(45deg);
+    }
+
+    75%{
+        transform: rotateX(-45deg) rotateY(45deg);
+    }
+
+    100%{
+        transform: rotateX(45deg) rotateY(-45deg);
+    }
+}
+
+#left2{
+    right: 125px;
+    transform: rotateY(-90deg);
+}
+
+#right2{
+    left: 125px;
+    transform: rotateY(90deg);
+}
+
+#top2{
+    bottom: 125px;
+    transform: rotateX(90deg);
+}
+
+#bottom2{
+    top: 125px;
+    transform: rotateX(-90deg);
+}
+
+ #front2{
+    transform: translateZ(125px);
+}
+
+#back2{
+    transform: translateZ(-125px);
+}
+
+/* ...................................................... */
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.wraparea{
+    animation: fun 10s ease-in-out infinite;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+}
+
+.wraparea div{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.wrapbox1{
+    background-image: url(../Imges/gallery-1.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(100px);
+}
+
+.wrapbox2{
+    background-image: url(../Imges/gallery-2.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.wrapbox3{
+    background-image: url(../Imges/gallery-3.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+
+.wrapbox4{
+    background-image: url(../Imges/gallery-4.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+
+.wrapbox5{
+    background-image: url(../Imges/gallery-5.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+
+.wrapbox6{
+    background-image: url(../Imges/gallery-6.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes fun{
+    from,to{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    16%{
+        transform: rotateY(-90deg);
+    }
+
+    33%{
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+
+    50%{
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+
+    66%{
+        transform: rotateY(-270deg) rotateZ(90deg);
+    }
+
+    83%{
+        transform: rotateX(90deg);
+    }
+}
+
+/* .............................................. */
 
 .topcard{
     display: flex;
@@ -955,7 +1127,7 @@ border: 3px dotted #00f376;
 /* ........................... */
 
 .parentgallery{
-    background: #00f376;
+    /* background: #00f376; */
     display: flex;
     justify-content: center;
    align-items: center; 
@@ -998,3 +1170,281 @@ border: 3px dotted #00f376;
 .animegallery:nth-child(1):hover{
     flex-basis: 50%;
 }
+
+/* .................................................. */
+
+.hovanime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hoveranime{
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.hoveranime img{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 0;
+    transition: 1s ease-in-out;
+    
+}
+
+.hoveranime img.img-front:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* ........................................................ */
+
+.mainpepsi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pepsicircle{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    /* background: #00f37650; */
+    /* ..to blend in with the background color or make it the same color with the back. */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+
+.pepsi{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    /* background: #ff0000;
+    clip-path: circle(120px at center);
+    transition: .5s; */
+}
+
+/* ..........it can still work without ::before..... */
+
+.pepsi::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    clip-path: circle(120px at center);
+    transition: .5s;
+}
+
+ .pepsi:hover::before{
+    clip-path: circle(400px at center);
+    background: #0000ff;
+}  
+
+
+/* .pepsicircle:hover .pepsi::before{
+    clip-path: circle(400px at center);
+    background: #0000ff;
+}  */
+
+/* .pepsi:hover{
+    clip-path: circle(400px at center);
+    background: #0000ff;
+} */
+
+.pepsicircle img{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: .5s;
+}
+
+.pepsicircle:hover img{
+    /* top: 72%; */
+    /* ...top 72% will move the img downward, giving room for content. this is good for mobile responsive.. */
+    
+    left: 72%;
+    height: 350px;
+}
+
+.nowcontent{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: .5s;
+    visibility: hidden;
+    /* .... or opacity........ */
+}
+
+.pepsicircle:hover .nowcontent{
+     left: 0;
+     visibility: visible;
+}
+
+.nowcontent h2{
+   text-transform: uppercase; 
+   font-size: xx-large;
+   line-height: 50px;
+}
+
+/* ................................................... */
+
+.mainvid{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nowcube{
+    position: absolute;
+    top: calc(50%-200px);
+    left: calc(50%-200px);
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+}
+
+.vidcube{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,150px);
+}
+
+.vidcube span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00000050;
+    background: #ccc;
+}
+
+.vidcube span:nth-child(1){
+    transform: rotateX(0deg) translate3d(0,0,200px);
+}
+
+.vidcube span:nth-child(2){
+    transform: rotateY(90deg) translate3d(0,0,-200px);
+}
+
+.vidcube span:nth-child(2) video{
+    transform: rotateY(180deg);
+}
+
+.vidcube span:nth-child(3){
+    transform: rotateX(90deg) translate3d(0,0,200px);
+}
+
+.vidcube span video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainvid video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ............................................................ */
+
+.mainvid1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nowcube1{
+    position: absolute;
+    top: calc(50%-200px);
+    left: calc(50%-200px);
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+}
+
+.vidcube1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px,-50px,150px);
+}
+
+.vidcube1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00000050;
+    background: #ccc;
+}
+
+.vidcube1 span:nth-child(1){
+    transform: rotateX(0deg) translate3d(0,0,200px);
+}
+
+.vidcube1 span:nth-child(2){
+    transform: rotateY(90deg) translate3d(0,0,-200px);
+}
+
+.vidcube1 span:nth-child(2) img{
+    transform: rotateY(180deg);
+}
+
+.vidcube1 span:nth-child(3){
+    transform: rotateX(90deg) translate3d(0,0,200px);
+}
+
+.vidcube1 span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ............................................................ */
